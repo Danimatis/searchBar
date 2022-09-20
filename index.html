@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Bar</title>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script defer src="./script2.js"></script>
+  </head>
+  <body>
+    <div class="dropdown input-group my-3 container w-75">
+      <input
+        class=" dropdown-toggle form-control"
+        type="text"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        value=""
+        id="input"
+      >
+      </input> 
+      <ul class="dropdown-menu" id="drop-down-list">
+
+      </ul>
+      <button class="btn btn-outline-black bg-info" type="button" id="submit">Submit</button>
+      </input> <button class="btn btn-outline-black bg-success" type="button" id="show-all">Show List</button>
+      </input> <button class="btn btn-outline-black bg-danger" type="button" id="clear-all">Clear Everything</button>
+
+      <ul class="dropdown-menu"
+      id="country-list-dropdown">
+      </ul>
+    </div>
+    <h4 id="alert" class="text-center mb-3"></h4>
+    <h5  id="country-picked" class="text-center"></h5>
+    <ul id="list"></ul>
+  </body>
+</html>
